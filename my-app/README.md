@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# Patient Record System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive React-based patient record management system with modern UI, dark/light mode support, and responsive design.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dashboard Overview** - View vital signs and health trends at a glance
+- **Patient Management** - Detailed patient profiles with medical history
+- **Appointment Scheduling** - Book and manage patient appointments
+- **Medication Tracking** - Track medications and schedules
+- **Health Charts** - Visualize health data trends with interactive charts
+- **Medical Records** - Comprehensive medical record management
+- **Notifications** - Real-time alerts for appointments and medications
+- **Settings** - Customizable application settings
+- **Dark/Light Mode** - Toggle between themes with persistent preference
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Modern UI** - Clean, professional interface with ashy/grey color theme and vibrant accents
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 19.1.1** - Frontend framework
+- **Create React App** - Project scaffolding
+- **Lucide React** - Icon library
+- **Recharts** - Data visualization for health charts
+- **CSS Variables** - Dynamic theming support
+- **React Context API** - Theme management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone https://github.com/lase26/patient-record-system.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
+```bash
+cd patient-record-system/my-app
+```
 
-### `npm run build`
+3. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Development Mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run the application in development mode:
+```bash
+npm start
+```
 
-### `npm run eject`
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will reload when you make changes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Production Build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Build the app for production:
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The optimized build will be created in the `build` folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running Tests
 
-## Learn More
+Launch the test runner:
+```bash
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+my-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Sidebar.js
+│   │   ├── VitalCard.js
+│   │   ├── HealthChart.js
+│   │   ├── Appointments.js
+│   │   ├── Medications.js
+│   │   ├── PatientProfile.js
+│   │   ├── Notifications.js
+│   │   ├── Settings.js
+│   │   └── MedicalRecords.js
+│   ├── contexts/
+│   │   └── ThemeContext.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## Features in Detail
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Vital Signs Monitoring
+- Real-time display of heart rate, blood pressure, temperature, blood oxygen, weight, and BMI
+- Trend indicators showing changes over time
+- Color-coded alerts for abnormal readings
 
-### Analyzing the Bundle Size
+### Patient Profiles
+- Comprehensive patient information management
+- Contact details and medical history
+- Edit functionality with form validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Appointment Management
+- Schedule and manage patient appointments
+- Filter by status (upcoming, completed)
+- Add new appointments with date/time selection
 
-### Making a Progressive Web App
+### Medication Tracking
+- Track patient medications and schedules
+- Dosage and timing information
+- Medication statistics and compliance tracking
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Health Charts
+- Interactive charts showing health trends over time
+- Visual representation of vital signs data
+- Multiple chart types for different metrics
 
-### Advanced Configuration
+## Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The application is fully responsive and adapts to different screen sizes:
+- **Desktop** (1024px+): Full sidebar navigation
+- **Tablet/Mobile** (≤1024px): Collapsible sidebar with hamburger menu
+- **Mobile** (≤768px): Optimized layout with stacked components
 
-### Deployment
+## Theme Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The application supports both light and dark modes:
+- **Light Mode**: Ashy/grey base with vibrant color accents (red, purple, green, blue, pink, orange)
+- **Dark Mode**: Deep grey base with brighter accent colors for visibility
+- Theme preference is persisted in localStorage
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Contact
+
+For questions or feedback, please open an issue on GitHub.
