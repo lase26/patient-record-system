@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Bell, X, Calendar, Pill, Activity, AlertCircle, CheckCircle } from 'lucide-react';
 
 const NotificationsSection = () => {
@@ -45,7 +45,7 @@ const NotificationsSection = () => {
     },
   ]);
 
-  const [showPanel, setShowPanel] = useState(false);
+ // const [showPanel, setShowPanel] = useState(false);
 
   const markAsRead = (id) => {
     setNotifications(notifications.map(notif => 
