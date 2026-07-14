@@ -15,7 +15,7 @@ import './App.css';
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [activeTab, setActiveTab] = useState('dashboard');
-  const [showNotifications, setShowNotifications] = useState(false);
+//  const [showNotifications, setShowNotifications] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
   // Handle window resize
