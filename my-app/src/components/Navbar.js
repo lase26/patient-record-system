@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import { Moon, Sun, Bell, Search, User, Menu, X } from 'lucide-react';
+import { Moon, Sun, Bell, Search, User, Menu } from 'lucide-react';
 
 const Navbar = ({ toggleSidebar, notifications, setActiveTab, activeTab, isMobile }) => {
   const { isDarkMode, toggleTheme } = useTheme();
